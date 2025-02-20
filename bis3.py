@@ -18,7 +18,6 @@ else:
     resource_path = "song.mp3"
 
 pygame.mixer.music.load(resource_path)
-pygame.mixer.music.play(loops=-1)
 
 # Liste des messages à afficher dans les fenêtres pop-up
 messages = [
@@ -38,7 +37,11 @@ messages = [
 # Liste pour stocker toutes les fenêtres pop-up
 windows = []
 
+# Timer pour gérer les pop-up
+popup_timer = None
+
 def spawn_window():
+    global popup_timer
     window = tk.Toplevel(main_window)  # Utilise la fenêtre principale
     message = choice(messages)
 
@@ -59,22 +62,35 @@ def spawn_window():
     windows.append(window)  # Ajouter la fenêtre à la liste pour pouvoir la fermer plus tard
 
     Timer(10, window.destroy).start()  # Détruire la fenêtre après 10 secondes
-    Timer(uniform(0.05, 0.2), spawn_window).start()  # Créer de nouvelles fenêtres à intervalles aléatoires
+
+    if popup_timer:  # Si le timer existe, relance spawn_window après 1 seconde
+        popup_timer = Timer(1, spawn_window)
+        popup_timer.start()
+
+def start_script():
+    global popup_timer
+    start_button.config(state=tk.DISABLED)  # Désactive le bouton "Démarrer"
+    stop_button.config(state=tk.NORMAL)  # Active le bouton "Arrêter"
+    pygame.mixer.music.play(loops=-1)  # Redémarre la musique si elle a été arrêtée
+    spawn_window()  # Lance la première fenêtre
+    popup_timer = Timer(1, spawn_window)  # Crée la première fenêtre pop-up
+    popup_timer.start()
+
+def stop_script():
+    global popup_timer
+    pygame.mixer.music.stop()  # Arrête la musique
+    close_all_windows()  # Ferme toutes les fenêtres pop-up
+    start_button.config(state=tk.NORMAL)  # Réactive le bouton "Démarrer"
+    stop_button.config(state=tk.DISABLED)  # Désactive le bouton "Arrêter"
+    
+    if popup_timer:
+        popup_timer.cancel()  # Arrête le timer pour la génération de fenêtres pop-up
+        popup_timer = None  # Réinitialise le timer
 
 def close_all_windows():
     for window in windows:
         window.destroy()  # Ferme chaque fenêtre pop-up
     windows.clear()  # Vide la liste des fenêtres
-
-def start_script():
-    start_button.config(state=tk.DISABLED)  # Désactive le bouton "Démarrer"
-    stop_button.config(state=tk.NORMAL)  # Active le bouton "Arrêter"
-    spawn_window()  # Lance le script
-
-def stop_script():
-    pygame.mixer.music.stop()  # Arrête la musique
-    close_all_windows()  # Ferme toutes les fenêtres pop-up
-    main_window.quit()  # Quitte la fenêtre principale
 
 # Fenêtre principale
 main_window = tk.Tk()
@@ -88,4 +104,5 @@ start_button.pack(pady=10)
 stop_button = tk.Button(main_window, text="Arrêter", command=stop_script, state=tk.DISABLED)
 stop_button.pack(pady=10)
 
+# Lancer la boucle principale de Tkinter
 main_window.mainloop()
