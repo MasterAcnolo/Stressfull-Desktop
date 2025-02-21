@@ -45,5 +45,31 @@ Si vous avez Python installé sur votre machine :
 
     ```bash
     python script.py
+---
 
+## 🚀 2. Exécuter la version `.exe` (Windows)  
 
+### 🔹 Exécuter l'exécutable `.exe`  
+
+Si vous ne voulez pas installer Python, utilisez l'exécutable compilé :  
+
+1. **Téléchargez** `EZ4ENCE.exe` depuis la section **Releases** du dépôt.  
+2. **Placez** `EZ4ENCE.exe` et `song.mp3` dans le même dossier.  
+3. **Double-cliquez** sur `EZ4ENCE.exe` pour démarrer l’application.  
+
+⚠ **Important** :  
+- `song.mp3` **doit être dans le même dossier** que l’exécutable, sinon la musique ne fonctionnera pas.  
+- L’antivirus peut détecter le `.exe` comme une menace en raison de la génération automatique de fenêtres. Ajoutez une exception si nécessaire.  
+
+---
+
+### 🔹 Compilation en `.exe`  
+
+Si vous souhaitez compiler vous-même le projet en `.exe`, suivez ces étapes :  
+
+1. **Installez PyInstaller** (si ce n'est pas déjà fait) :  
+
+   ```bash
+   pip install pyinstaller
+
+2.
