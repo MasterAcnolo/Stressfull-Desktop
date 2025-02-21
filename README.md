@@ -31,7 +31,7 @@ Si vous avez Python installé sur votre machine :
 1. **Clonez le dépôt** :  
 
    ```bash
-   git clone https://github.com/ton-github/EZ4ENCE-PopUp.git
+   git clone https://github.com/MasterAcnolo/Stressfull-Desktop
    cd EZ4ENCE-PopUp
 
 
