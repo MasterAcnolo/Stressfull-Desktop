@@ -92,3 +92,12 @@ Si vous souhaitez compiler vous-même le projet en `.exe`, suivez ces étapes :
 - Ne pas utiliser à des fins malveillantes.
 - Si vous avez des questions ou suggestions, n’hésitez pas à contribuer ! 🚀
 
+## ⚖️ Conditions légales
+
+Ce projet utilise la musique de **EZ4ENCE** dans le cadre de son fonctionnement. Veuillez respecter les droits d'auteur et les conditions d'utilisation liées à cette musique. Vous devez vous assurer que vous avez l'autorisation appropriée pour utiliser cette musique dans vos projets, notamment si vous prévoyez de distribuer ou de commercialiser l'application.
+
+La musique utilisée dans ce projet est **[EZ4ENCE](https://open.spotify.com/intl-fr/track/4qHdhSUkmDh6r7Ea4NzAvM)**. Vous pouvez écouter la chanson sur Spotify à partir du lien ci-dessus.
+
+### Avertissement
+L'utilisation de la musique **EZ4ENCE** dans ce projet ne constitue pas un accord commercial ou une licence de la part de **EZ4ENCE**. Veuillez consulter les licences et les conditions d'utilisation avant d'utiliser cette musique à des fins autres que celles spécifiées dans ce projet.
+
