@@ -80,7 +80,9 @@ Si vous souhaitez compiler vous-même le projet en `.exe`, suivez ces étapes :
 
     **Explication des options utilisés:**
 
-    - `--onefile` : genère un seul fichier `.exe` au lieu de plusieurs fichiers
-    - `--windowed` : Cache la console pour un affichage propre.
-    - `--add-data "song.mp3;.` : Ajoute le fichier audio dans l’exécutable pour éviter les erreurs.
+- `--onefile` : genère un seul fichier `.exe` au lieu de plusieurs fichiers
+- `--windowed` : Cache la console pour un affichage propre.
+- `--add-data "song.mp3;.` : Ajoute le fichier audio dans l’exécutable pour éviter les erreurs.
+
+3. **Récupérez l’exécutable : Une fois la compilation terminée, l’exécutable sera disponible dans le dossier `dist/`**
 
