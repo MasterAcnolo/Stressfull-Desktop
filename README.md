@@ -34,31 +34,16 @@ Si vous avez Python installé sur votre machine :
    git clone https://github.com/ton-github/EZ4ENCE-PopUp.git
    cd EZ4ENCE-PopUp
 
-### 🔹 2. Installez les dépendances  
 
-    Si vous avez Python installé sur votre machine, exécutez la commande suivante pour installer les modules nécessaires :  
+2. **Installez les dépendances :** : 
 
     ```bash
     pip install pygame
 
-###🔹 2. Exécuter la version `.exe` (Windows)
 
-Si vous ne voulez pas installer Python, utilisez l'exécutable compilé :
+3. **Lancez le script:** :
 
-1. Téléchargez **EZ4ENCE.exe** depuis la section **Releases** du dépôt.
-2. Placez **EZ4ENCE.exe** et **song.mp3** dans le même dossier.
-3. Double-cliquez sur **EZ4ENCE.exe** pour démarrer l’application.
+    ```bash
+    python script.py
 
-⚠ **Important** : Si `song.mp3` n’est pas dans le même dossier que l’exécutable, la musique ne fonctionnera pas.
-
----
-
-### 🔹 Compilation en `.exe`
-
-Si vous souhaitez compiler vous-même le projet en `.exe`, suivez ces étapes :
-
-1. Installez **PyInstaller** si ce n'est pas déjà fait :
-
-   ```bash
-   pip install pyinstaller
 
