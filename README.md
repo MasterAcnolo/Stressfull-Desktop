@@ -80,7 +80,7 @@ Si vous souhaitez compiler vous-même le projet en `.exe`, suivez ces étapes :
 
     **Explication des options utilisés:**
 
-    * `--onefile` : genère un seul fichier `.exe` au lieu de plusieurs fichiers
-    *
-    *
+    - `--onefile` : genère un seul fichier `.exe` au lieu de plusieurs fichiers
+    - `--windowed` : Cache la console pour un affichage propre.
+    -
 
