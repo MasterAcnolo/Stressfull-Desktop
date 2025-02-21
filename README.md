@@ -86,9 +86,9 @@ Si vous souhaitez compiler vous-même le projet en `.exe`, suivez ces étapes :
 
 3. **Récupérez l’exécutable : Une fois la compilation terminée, l’exécutable sera disponible dans le dossier `dist/`**
 
-### 🔹 Remarque
+### 🔹 Remarque:
 
--Ce projet a été réalisé pour le fun et l'apprentissage.
--Ne pas utiliser à des fins malveillantes.
--Si vous avez des questions ou suggestions, n’hésitez pas à contribuer ! 🚀
+- Ce projet a été réalisé pour le fun et l'apprentissage.
+- Ne pas utiliser à des fins malveillantes.
+- Si vous avez des questions ou suggestions, n’hésitez pas à contribuer ! 🚀
 
