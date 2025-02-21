@@ -76,5 +76,6 @@ Si vous souhaitez compiler vous-même le projet en `.exe`, suivez ces étapes :
     
     ```bash
     pyinstaller --onefile --windowed --add-data "song.mp3;." script.py
-
+    ```
     ss
+    
