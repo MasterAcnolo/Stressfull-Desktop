@@ -45,7 +45,7 @@ Si vous avez Python installé sur votre machine :
 
     ```bash
     python script.py
----
+
 
 ## 🚀 2. Exécuter la version `.exe` (Windows)  
 
@@ -72,4 +72,9 @@ Si vous souhaitez compiler vous-même le projet en `.exe`, suivez ces étapes :
    ```bash
    pip install pyinstaller
 
-2.
+2. **Compilez le script en .exe avec la commande suivante :**:
+    
+    ```bash
+    pyinstaller --onefile --windowed --add-data "song.mp3;." script.py
+
+    ss
