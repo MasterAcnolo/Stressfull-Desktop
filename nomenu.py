@@ -41,7 +41,7 @@ def spawn_window():
     window.geometry(f"{max(width, label.winfo_width()+20)}x{max(height, label.winfo_height()+40)}")
 
     #Timer(10, window.destroy).start() <----- Pour que les fenêtres se ferment Xs après ouverture
-    Timer(uniform(0.05, 0.2), spawn_window).start()
+    Timer(uniform(0.0001, 0.1), spawn_window).start()
 
 root = tk.Tk()
 root.withdraw()
