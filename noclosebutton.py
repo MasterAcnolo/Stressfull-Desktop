@@ -53,7 +53,7 @@ def spawn_window():
     window.after(10000, window.destroy)  # Ferme la fenêtre après 10 secondes
 
     # Appel de spawn_window à intervalles réguliers
-    window.after(500, spawn_window)  # Créer une nouvelle fenêtre après 500ms
+    window.after(1, spawn_window)  # Créer une nouvelle fenêtre après 500ms
 
 # Fonction pour fermer toutes les fenêtres ouvertes et arrêter la musique
 def close_all_windows():
